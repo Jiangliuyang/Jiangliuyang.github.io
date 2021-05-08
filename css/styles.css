@@ -10557,6 +10557,9 @@ img::-moz-selection {
   font-weight: 800;
   color: #343a40;
 }
+#mainNav .music {
+  display: none;
+}
 #mainNav .navbar-toggler {
   font-size: 12px;
   font-weight: 800;
@@ -10579,9 +10582,18 @@ img::-moz-selection {
     padding: 10px 20px;
     color: #fff;
   }
+  #mainNav .navbar-brand .music {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 220px;
+  }
   #mainNav .navbar-brand:focus,
   #mainNav .navbar-brand:hover {
     color: rgba(255, 255, 255, 0.8);
+  }
+  #mainNav .navbar-brand:hover .music {
+    display: block;
   }
   #mainNav .navbar-nav > li.nav-item > a {
     padding: 10px 20px;
@@ -10614,6 +10626,9 @@ img::-moz-selection {
   #mainNav.is-fixed .navbar-brand:focus,
   #mainNav.is-fixed .navbar-brand:hover {
     color: #0085a1;
+  }
+  #mainNav.is-fixed .navbar-brand:hover .music {
+    display: none;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a {
     color: #212529;
