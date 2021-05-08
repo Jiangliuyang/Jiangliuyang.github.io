@@ -4327,6 +4327,33 @@ input[type="button"].btn-block {
     transform: rotate(360deg);
   }
 }
+/* Firefox */
+@-moz-keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Safari and Chrome */
+@-webkit-keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Opera */
+@-o-keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .navbar-brand:hover,
 .navbar-brand:focus {
   text-decoration: none;
