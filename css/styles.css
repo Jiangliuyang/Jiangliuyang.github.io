@@ -10708,8 +10708,6 @@ footer .copyright {
 }
 
 header.masthead {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
   margin-bottom: 50px;
   background: no-repeat center center;
   background-color: #6c757d;
@@ -10733,10 +10731,16 @@ header.masthead .site-heading {
   color: white;
 }
 @media only screen and (min-width: 768px) {
+  header.masthead {
+    height: 100vh;
+  }
   header.masthead .page-heading,
   header.masthead .post-heading,
   header.masthead .site-heading {
-    padding: 200px 0;
+    padding: 0;
+    position: relative;
+    top: 50vh;
+    transform: translate(0, -50%);
   }
 }
 header.masthead .page-heading,
@@ -10802,8 +10806,8 @@ header.masthead .post-heading .meta a {
 }
 
 .post-preview {
-  padding-top: 15rem;
-  padding-bottom: 15rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .post-preview > a {
@@ -10816,18 +10820,21 @@ header.masthead .post-heading .meta a {
 }
 .post-preview > a > .post-title {
   font-size: 30px;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .post-preview > a > .post-subtitle {
+  text-align: center;
   font-weight: 300;
-  margin: 0 0 10px;
+  margin: 2rem 2rem 2rem 2rem;
 }
 .post-preview > .post-meta {
   font-size: 18px;
   font-style: italic;
-  margin-top: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   color: #6c757d;
+  line-height: 35px;
 }
 .post-preview > .post-meta > a {
   text-decoration: none;
@@ -10841,5 +10848,11 @@ header.masthead .post-heading .meta a {
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
     font-size: 36px;
+  }
+  .post-preview {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
