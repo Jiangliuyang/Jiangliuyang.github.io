@@ -10620,12 +10620,13 @@ img::-moz-selection {
     padding: 10px 20px;
     color: #fff;
     perspective: 100px;
+    font-size: 30px;
   }
   #mainNav .navbar-brand .music {
     display: none;
     position: fixed;
-    top: 0px;
-    left: 60px;
+    top: 10px;
+    left: 70px;
   }
   #mainNav .navbar-brand:focus,
   #mainNav .navbar-brand:hover {
@@ -10637,6 +10638,8 @@ img::-moz-selection {
   #mainNav .navbar-nav > li.nav-item > a {
     padding: 10px 20px;
     color: #fff;
+    font-size: 18px;
+    font-weight: 400;
   }
   #mainNav .navbar-nav > li.nav-item > a:focus,
   #mainNav .navbar-nav > li.nav-item > a:hover {
@@ -10654,7 +10657,7 @@ img::-moz-selection {
   #mainNav.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
-    top: -67px;
+    top: -82px;
     transition: transform 0.2s;
     border-bottom: 1px solid white;
     background-color: rgba(255, 255, 255, 0.9);
