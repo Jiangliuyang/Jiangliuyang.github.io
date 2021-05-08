@@ -4316,6 +4316,17 @@ input[type="button"].btn-block {
   line-height: inherit;
   white-space: nowrap;
 }
+.navbar-brand .fa-music {
+  animation: rotating 5s linear infinite;
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .navbar-brand:hover,
 .navbar-brand:focus {
   text-decoration: none;
