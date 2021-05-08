@@ -10581,12 +10581,13 @@ img::-moz-selection {
   #mainNav .navbar-brand {
     padding: 10px 20px;
     color: #fff;
+    perspective: 100px;
   }
   #mainNav .navbar-brand .music {
     display: none;
     position: fixed;
-    top: 10px;
-    left: 220px;
+    top: 0px;
+    left: 60px;
   }
   #mainNav .navbar-brand:focus,
   #mainNav .navbar-brand:hover {
