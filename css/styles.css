@@ -149,7 +149,7 @@ dd {
 }
 
 blockquote {
-  margin: 0 0 1rem;
+  margin: 1rem 0 1rem 0;
 }
 
 b,
@@ -511,6 +511,9 @@ mark,
   content: "— ";
 }
 
+.center-img {
+  text-align: center;
+}
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -10510,9 +10513,19 @@ blockquote {
 }
 
 .section-heading {
-  font-size: 36px;
+  font-size: 1.5rem;
   font-weight: 700;
-  margin-top: 60px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-heading {
+    font-size: 1.8rem;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
 }
 
 .caption {
@@ -10576,12 +10589,19 @@ blockquote {
 
 .music-card .imgViewDom img {
   position: relative;
-  width: auto;
-  height: 90%;
+  width: 80vw;
+  height: auto;
   box-shadow: 5px 5px 5px #888888;
   top: 50vh;
   left: 50vw;
   transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 768px) {
+  .music-card .imgViewDom img {
+    width: auto;
+    height: 90vh;
+  }
 }
 
 @keyframes appear {
@@ -10812,6 +10832,7 @@ footer .list-inline {
 }
 footer .copyright {
   font-size: 14px;
+  margin-top: 0;
   margin-bottom: 0;
   text-align: center;
 }
@@ -10824,7 +10845,8 @@ header.masthead {
   background-color: #6c757d;
   background-attachment: scroll;
   position: relative;
-  background-size: cover;
+  /* background-size: contain; */
+  background-size: 100% 100%;
 }
 header.masthead .overlay {
   position: absolute;
@@ -10863,14 +10885,15 @@ header.masthead .page-heading h1,
 header.masthead .site-heading h1 {
   font-size: 50px;
   margin-top: 0;
+  line-height: 1.6;
 }
 header.masthead .page-heading .subheading,
 header.masthead .site-heading .subheading {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 300;
-  line-height: 1.1;
+  line-height: 2;
   display: block;
-  margin: 30px 0 0;
+  margin: 70px 0 0;
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -10886,7 +10909,7 @@ header.masthead .post-heading h1 {
 }
 header.masthead .post-heading .meta,
 header.masthead .post-heading .subheading {
-  line-height: 1.1;
+  line-height: 2;
   display: block;
 }
 header.masthead .post-heading .subheading {
@@ -10920,10 +10943,12 @@ header.masthead .post-heading .meta a {
 .post-preview {
   padding-top: 3rem;
   padding-bottom: 3rem;
+  color: #fff;
 }
 
 .post-preview > a {
-  color: #212529;
+  /* color: #212529; */
+  color: #fff;
 }
 .post-preview > a:focus,
 .post-preview > a:hover {
@@ -10937,16 +10962,19 @@ header.masthead .post-heading .meta a {
 }
 .post-preview > a > .post-subtitle {
   text-align: center;
-  font-weight: 300;
+  font-weight: 700;
   margin: 2rem 2rem 2rem 2rem;
+  font-size: 3rem;
 }
 .post-preview > .post-meta {
-  font-size: 18px;
-  font-style: italic;
+  font-weight: 400;
+  font-size: 1.5rem;
+  /* font-style: italic; */
   margin-top: 2rem;
   margin-bottom: 2rem;
-  color: #6c757d;
+  /* color: #6c757d; */
   line-height: 35px;
+  text-align: center;
 }
 .post-preview > .post-meta > a {
   text-decoration: none;
@@ -10967,4 +10995,54 @@ header.masthead .post-heading .meta a {
     padding-left: 5rem;
     padding-right: 5rem;
   }
+}
+
+.video-iframe {
+  text-align: center;
+  width: 100%;
+  height: 400px;
+  margin: 50px 0 50px 0;
+}
+
+.video-iframe iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .video-iframe {
+    width: 90%;
+    height: 500px;
+    margin: 50px 5% 50px 5%;
+  }
+}
+
+.carousel {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #bdc3c7;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-image {
+  width: 90%;
+  height: 100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.pager {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
