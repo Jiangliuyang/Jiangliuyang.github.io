@@ -10845,8 +10845,7 @@ header.masthead {
   background-color: #6c757d;
   background-attachment: scroll;
   position: relative;
-  /* background-size: contain; */
-  background-size: 100% 100%;
+  background-size: cover;
 }
 header.masthead .overlay {
   position: absolute;
@@ -10867,6 +10866,7 @@ header.masthead .site-heading {
   header.masthead {
     padding: 0;
     height: 100vh;
+    background-size: 100% 100%;
   }
   header.masthead .page-heading,
   header.masthead .post-heading,
@@ -11045,4 +11045,18 @@ header.masthead .post-heading .meta a {
 .pager {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.music-iframe {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 999;
+}
+
+@media only screen and (min-width: 768px) {
+  .music-iframe {
+    bottom: 20px;
+    left: 20px;
+  }
 }
