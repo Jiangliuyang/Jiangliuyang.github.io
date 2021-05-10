@@ -10964,7 +10964,7 @@ header.masthead .post-heading .meta a {
   text-align: center;
   font-weight: 700;
   margin: 2rem 2rem 2rem 2rem;
-  font-size: 3rem;
+  font-size: 2.4rem;
 }
 .post-preview > .post-meta {
   font-weight: 400;
@@ -10988,6 +10988,9 @@ header.masthead .post-heading .meta a {
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
     font-size: 36px;
+  }
+  .post-preview > a > .post-subtitle {
+    font-size: 3rem;
   }
   .post-preview {
     padding-top: 10rem;
