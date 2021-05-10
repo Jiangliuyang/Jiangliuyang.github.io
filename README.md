@@ -47,3 +47,14 @@ assets/img/video/2/2.jpeg https://i.loli.net/2021/05/10/6B5aEgf8uLiAnJN.jpg
 assets/img/video/2/3.jpeg https://i.loli.net/2021/05/10/qZelT8rIvFm4jx6.jpg
 assets/img/video/2/4.jpeg https://i.loli.net/2021/05/10/W7JgZ5e8HqbGvaj.jpg
 assets/img/video/2/5.jpeg https://i.loli.net/2021/05/10/ejhDZGBmc4QpwEO.jpg
+
+### festival
+
+assets/img/festival/festival-bg.jpeg https://i.loli.net/2021/05/10/dK7OVYsLFGwuEfN.jpg
+assets/img/festival/festival-1.jpeg https://i.loli.net/2021/05/10/y8sdEYVWFJCDZgt.jpg
+assets/img/festival/1.png https://i.loli.net/2021/05/10/ylxZ8OPYD4XuNFh.png
+assets/img/festival/2.png https://i.loli.net/2021/05/10/8RekyzY45rnD2Ba.png
+assets/img/festival/3.png https://i.loli.net/2021/05/10/s9PXxcAjSfKg1DW.png
+assets/img/festival/4.png https://i.loli.net/2021/05/10/LSJay5Kpen3OdoP.png
+assets/img/festival/5.png https://i.loli.net/2021/05/10/MKlCTprRfByonbN.png
+assets/img/festival/6.png https://i.loli.net/2021/05/10/gsCmFRBHr8QZ1dn.png
